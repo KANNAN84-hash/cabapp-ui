@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> User Login </title>
+</head>
+<center>
+<body bgcolor="white">
+    <h3>LOGIN PAGE</h3>
+
+<form onsubmit = "login()">
+    <label for = "username">Username</label>
+    <input type="text" name="username" id="username" placeholder="Enter Username"
+    required autofocus>
+    <br/>
+    <br/>
+    <label for = "password">Password</label>
+    <input type="text" id="password" placeholder="Enter password"
+    required autofocus>
+    <br/>
+    <br/>
+    <button type="submit" >Submit</button>
+    <button type="reset"  >Reset</button>
+    <button type="button"  onclick="hello()">Click me </button>
+</form>
+<script>
+    function login()
+    {
+        event.preventDefault();
+        alert("Login btn clicked");
+        let username = document.querySelector("#username").value;
+        alert("Username:" + username);
+        if (username == "910617114037"  && password == "kannan")
+        {
+            alert("Login Success");
+        }
+        else{
+            alert("Invalid UserName or password");
+        }
+    }
+    function hello()
+    {
+        alert("hello")
+    }
+
+    }
+</script>
+
+
+
+</form>
+</body>
+</html>
